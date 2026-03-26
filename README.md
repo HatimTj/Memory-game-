@@ -27,19 +27,13 @@ Le joueur doit retrouver des paires de cartes identiques parmi un ensemble de ca
 
 ## 🚀 Installation
 ```bash
-# Cloner le projet
 git clone https://github.com/HatimTj/Memory-game-.git
-
-# Installer les dépendances
 npm install
-
-# Lancer le serveur de développement
 npm run dev
 ```
 
-## 👨‍💻 Auteurs
+## 👨‍💻 Auteur
 
 - **Hatim Tajimi**
-- **Houssam El Moutaqui**
 
 EMSI Rabat - 2024/2025
