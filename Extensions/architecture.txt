@@ -1,0 +1,78 @@
+memory-game/
+├── src/
+│   ├── components/     # Composants React réutilisables
+│   │   ├── Card.tsx         # Carte individuelle du jeu
+│   │   ├── GameBoard.tsx    # Plateau de jeu
+│   │   ├── GameOver.tsx     # Modal de fin de partie
+│   │   ├── ScoreBoard.tsx   # Tableau des scores
+│   │   └── Timer.tsx        # Composant chronomètre
+│   ├── hooks/         # Hooks React personnalisés
+│   │   └── useMemoryGame.ts # Logique du jeu
+│   ├── types/        # Définitions TypeScript
+│   │   └── card.ts         # Types pour les cartes
+│   ├── App.tsx       # Composant principal
+│   ├── main.tsx      # Point d'entrée
+│   └── index.css     # Styles globaux
+
+
+
+2. Composants Principaux
+App.tsx
+Composant racine de l'application
+Gère la mise en page principale
+Coordonne les interactions entre les composants
+Components
+Card: Gère l'affichage et l'interaction d'une carte individuelle
+GameBoard: Affiche la grille de cartes
+ScoreBoard: Affiche le score, les mouvements et le chronomètre
+GameOver: Modal affiché à la fin de la partie
+Timer: Gère l'affichage du temps écoulé
+3. Logique du Jeu (useMemoryGame.ts)
+Hook personnalisé gérant toute la logique du jeu
+Fonctionnalités :
+Initialisation du jeu
+Gestion des cartes retournées
+Calcul du score
+Compteur de mouvements
+Chronomètre
+Vérification de fin de partie
+4. Technologies Utilisées
+Frontend
+React 18.3
+TypeScript
+Tailwind CSS pour le styling
+Lucide React pour les icônes
+Build & Development
+Vite comme bundler et serveur de développement
+ESLint pour le linting
+PostCSS pour le processing CSS 
+
+
+useMemoryGame (Hook)
+    ↓
+App (État global)
+    ↓
+    ├── ScoreBoard (Affichage des stats)
+    ├── GameBoard (Grille de jeu)
+    │   └── Card (Cartes individuelles)
+    └── GameOver (Modal de fin)
+
+6. Fonctionnalités Clés
+Gestion du Jeu
+
+Mélange aléatoire des cartes
+Logique de correspondance des paires
+Système de score
+Compteur de mouvements
+Chronomètre
+Interface Utilisateur
+
+Design responsive
+Animations fluides
+Effets visuels modernes
+Feedback visuel immédiat
+État du Jeu
+
+Suivi des cartes retournées
+Détection de fin de partie
+Réinitialisation du jeu
